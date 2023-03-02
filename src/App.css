@@ -1,0 +1,213 @@
+:root {
+  --color-base: #aa2a2a;
+  --color-resalto: #530606;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
+header, main, footer {
+  padding: 1em;
+}
+
+header {
+  background-color: var(--color-base);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#carroItems{
+  background-color: #343232;
+  border-radius: 13px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main{
+  min-height: calc(100% - 200px);
+}
+
+main section {
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#portada{
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+main ul li {
+  margin: 0 40px 30px;
+  flex-grow: 1;
+  max-width: 250px;
+}
+
+.contenedorImg{
+  max-width: 100%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;  
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+nav a,button {
+  background-color: var(--color-base);
+  color: #fff;
+  padding: 0.5em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+nav a:hover,button:hover {
+  background-color: var(--color-resalto);
+}
+
+.boton{
+  display: block;
+  margin: 0 auto;
+  min-width: 100px;
+  text-align: center;
+}
+
+.precio{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#precioTotal{
+  display: flex;
+  justify-content: center;
+}
+
+#precioTotal h3{
+  margin: 0 20px 0;
+  line-height: 1.7em;
+}
+
+#pago{
+  text-align: center;
+  margin-top:100px;
+}
+
+footer {
+  background-color: var(--color-base);
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  text-align: left;
+  height: 80px;
+}
+
+.cantidadBoton{
+  cursor: pointer;
+  background-color: #7d7a7a;
+  display: inline-block;
+  width: 15px;
+  margin: 0 4px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+}
+
+#paypal{
+  width: 50%;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav li {
+    margin-bottom: 0.5em;
+  }
+
+  main ul {
+    justify-content: center;
+  }
+
+  main ul li{
+    margin: 0 10px 20px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+
+  button[type="submit"] {
+    margin-top: 0.5em;
+  }
+}
